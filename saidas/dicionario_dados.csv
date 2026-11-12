@@ -1,0 +1,22 @@
+Coluna,Tipo,% Faltantes,Exemplo de valor,Observação
+pedido_id,int64,0.0,500000,
+data_hora,datetime64[us],0.0,2024-01-01 11:21:00,
+cidade,str,0.0,São Paulo,
+bairro,str,0.0,Tatuapé,
+restaurante_id,str,0.0,R912,
+tipo_cozinha,str,0.0,Hambúrguer,
+plataforma,str,0.0,Android,
+forma_pagamento,str,0.0,Pix,
+cupom,bool,0.0,False,
+cliente_novo,bool,0.0,False,
+chuva,bool,0.0,False,
+distancia_km,float64,4.0,2.68,
+tempo_entrega_min,float64,0.41,28.0,
+valor_pedido,float64,0.0,44.02,
+taxa_entrega,float64,0.0,7.4,
+avaliacao,float64,16.65,4.0,
+tempo_invalido,bool,0.0,False,True se o tempo original era 999 ou negativo (virou NaN)
+distancia_invalida,bool,0.0,False,True se a distância original era > 100 km (virou NaN)
+pedido_grande,bool,0.0,False,"True se valor_pedido > 4× a mediana da cozinha (pedido corporativo, mantido)"
+distancia_km_rec,float64,0.31,2.68,distância reconstruída pela taxa de entrega onde havia NaN e taxa > 0
+distancia_imputada,bool,0.0,False,True se distancia_km_rec foi reconstruída
